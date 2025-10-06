@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Open Letter</title>
+    <meta name="description" content="A plain letter published via GitHub Pages." />
+    <style>
+      :root {
+        --ink: #111;
+        --paper: #ffffff;
+        --muted: #6b7280;
+        --maxw: 720px;
+      }
+      html, body { height: 100%; }
+      body {
+        margin: 0;
+        font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+        color: var(--ink);
+        background: var(--paper);
+        line-height: 1.6;
+      }
+      header {
+        padding: 3rem 1.25rem 1rem;
+        text-align: center;
+        border-bottom: 1px solid #e5e7eb;
+      }
+      header h1 { 
+        margin: 0 0 .25rem; 
+        font-size: clamp(1.75rem, 2.5vw, 2.25rem);
+        letter-spacing: .2px;
+      }
+      header p { margin: 0; color: var(--muted); }
+
+      main { 
+        max-width: var(--maxw);
+        margin: 0 auto; 
+        padding: 2rem 1.25rem 4rem; 
+      }
+
+      .letter-meta { color: var(--muted); margin-bottom: 1.5rem; }
+
+      .letter {
+        font-size: 1.05rem;
+      }
+      .letter p { margin: 0 0 1rem; }
+
+      .signoff { margin-top: 2rem; }
+
+      footer {
+        max-width: var(--maxw);
+        margin: 2rem auto 4rem; 
+        padding: 0 1.25rem;
+        color: var(--muted);
+        font-size: .95rem;
+        border-top: 1px solid #e5e7eb;
+        padding-top: 1rem;
+      }
+
+      /* Print-friendly */
+      @media print {
+        header, footer { border: none; }
+        body { color: black; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Open Letter Title</h1>
+      <p>Subtitle or tagline (optional)</p>
+    </header>
+
+    <main>
+      <div class="letter-meta">
+        <div id="date">Dated: <span><!-- e.g., 6 October 2025 --></span></div>
+        <div id="location">Location: <span><!-- e.g., Gold Coast, Australia --></span></div>
+      </div>
+
+      <article class="letter" aria-label="Letter body">
+        <p>Dear Reader,</p>
+
+        <p>
+          This is a plain example letter published via GitHub Pages. Replace this
+          paragraph with your own content. You can add more paragraphs, lists, or
+          links as needed.
+        </p>
+
+        <p>
+          Keep the tone and structure simple for readability. If you want to
+          emphasise a point, you can use <strong>bold</strong> or <em>italics</em>.
+        </p>
+
+        <p class="signoff">
+          Kind regards,<br/>
+          <strong>Your Name</strong>
+        </p>
+      </article>
+    </main>
+
+    <footer>
+      <p>
+        Published with <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>.
+      </p>
+    </footer>
+  </body>
+</html>
